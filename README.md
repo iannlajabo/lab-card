@@ -1,4 +1,4 @@
-# Lab: Property card
+# Assignment: Property card
 
 1. *Fork* the repository, then *clone* the new repository to your local computer.
 2. Take the sample composition below and annotate the elements and layers using the graphic software of your choice. Consider the visual representation of each later or component, while also noting the element type and providing an appropriate class name (or classes) for each, at minimum.
