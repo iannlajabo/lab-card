@@ -1,13 +1,19 @@
 body{
     font:1em system-ui;
+    background-color: #d3e6e6;
 }
 .card{
+    background-color: #fff;
+    border-radius: 12px;
     display: grid;
-    margin: 2.5rem;
+    grid-template-rows: (4, 1fr);
+    box-shadow: 0 0 0.5em black;
+    margin: 2rem 2rem;
+    padding: 1rem 1rem;
     width: 40rem;
+    gap: 1rem;
 }
-.image{
-    display: flex;
-    justify-content: center;
-    border-radius: 50%;
+.photo{
+    box-sizing: border-box;
+    max-width: auto;
 }
