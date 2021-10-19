@@ -1,3 +1,13 @@
 body{
     font:1em system-ui;
 }
+.card{
+    display: grid;
+    margin: 2.5rem;
+    width: 40rem;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+}
