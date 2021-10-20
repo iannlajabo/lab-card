@@ -1,7 +1,7 @@
 
 body{
     font:1em system-ui;
-    background-color: #eaeaea;
+    background-color: rgb(237, 254, 254);
     margin: 0;
 }
 .card{
@@ -19,19 +19,20 @@ body{
     margin:1rem 2rem;
     max-width:35rem;
     min-width:10rem;
+    max-height:auto;
     border:none;
     border-radius: 12px;
+    box-shadow: 0 0 0.5em #333;
 }
 .photo{
     width: 100%;
     border-radius: 12px;
-}
-.photo{
     box-sizing: border-box;    
 }
 .description{
     grid-area: b;
     padding: 0.5rem;
+    line-height: 1;
 }
 .amenities{
     grid-area: c;
