@@ -6,8 +6,10 @@ body{
 }
 .card{
     position: absolute;
-    left: 300px;
+    left: 400px;
     right: 300px;
+    bottom: 100px;
+    top: 100px;
     background-color:#fff;
     display:grid;
     grid-template-columns: repeat(1, 1fr);
@@ -17,30 +19,32 @@ body{
     "c"
     "d";
     margin:1rem 2rem;
-    max-width:35rem;
+    max-width:25rem;
     min-width:10rem;
-    max-height:auto;
-    border:none;
-    border-radius: 12px;
+    max-height:55rem;
+    border-radius:12px;
     box-shadow: 0 0 0.5em #333;
 }
 .photo{
     width: 100%;
-    border-radius: 12px;
+    border-radius: 12px 12px 0 0;
     box-sizing: border-box;    
 }
 .description{
     grid-area: b;
-    padding: 0.5rem;
-    line-height: 1;
+    margin: 1rem;
+    padding: 0;    
 }
 .amenities{
+    border: 0;
     grid-area: c;
-    padding: 0.5rem;
+    margin: 1rem;
+    padding: 0; 
 }
 .realtor{
     grid-area: d;
-    padding: 0.5rem;
+    margin: 1rem;
+    padding: 0;
 }
 
 
