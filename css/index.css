@@ -58,26 +58,28 @@ body{
 } */
 .middlebar{
     display: flex;
-    justify-content: space-between;
-    padding: 0.5;
+    justify-content: space-around;
+    padding: 0.5em;
     border: 1px solid gray;
     border-left: none;
     border-right: none;
 }
 .logo{
-    display:flex;
-    align-self: flex-start;
-    flex-direction: row;
+    display:block;
+    /* vertical-align: middle;    */
     width: 2em;
-    height: 2em;
-    margin-left: 0;
+    height: 1.5em;
 }
 ul{
     display: flex;
     flex-direction: row;
-    justify-items:center;
     grid-area: c;
     list-style-type:none;
+    gap: 0.5em;
+}
+.info{
+    display: flex;
+    gap: 0.4em;
 }
 .realtor{
     margin-left: 0.5rem;
