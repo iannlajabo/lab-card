@@ -8,6 +8,11 @@ body{
     background-color:#fff;
     display:grid;
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 
+                        1fr
+                        1fr
+                        4em
+                        1fr;
     grid-template-areas: 
     "a"
     "b"
@@ -15,10 +20,13 @@ body{
     "d";
     margin:1rem 1rem;
     margin-top: 30vh;
+    margin-left: 5vh;
+    margin-right: auto;
     width:20rem;
     height:30rem;
     border-radius:12px;
     box-shadow: 0 0 0.5em #333;
+    box-sizing: border-box;
 }
 .photo{
     max-width: 100%;
@@ -49,18 +57,11 @@ body{
     margin-bottom: 0;
     padding-bottom: 0;
 }
-/* .line{
-    display: flex;
-    background-color: rgb(205, 205, 205);
-    width: 100%;
-    height:0.10em;
-    margin-top: 2em;
-} */
 .middlebar{
     display: flex;
     justify-content: space-around;
     padding: 0.5em;
-    border: 1px solid gray;
+    border: 1px solid rgb(192, 192, 192);
     border-left: none;
     border-right: none;
 }
@@ -81,15 +82,71 @@ ul{
     display: flex;
     gap: 0.4em;
 }
-.realtor{
-    margin-left: 0.5rem;
-    margin-top: 0;
-    margin-bottom: 0;
-    grid-area: d;
+.type{
+    color: rgb(73, 73, 73);
 }
-.contact{
+.quantity{
+    font-weight: bold;
+}
+.realtor{
+    grid-area: d;
+    /* border: 0.1em solid black; */
+    box-sizing: border-box;
+    max-height: 9em;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    grid-template-rows: 
+                        auto
+                        1fr
+                        1fr;
+    grid-template-areas: 
+    "ti     ti      ti"
+    "pic    na      bt"
+    "pic    nu      bt";
+}
+.title{
+    color: gray;
+    font-weight: bold;
+    margin: 0 1rem;
+    grid-area: ti;
+}
+.realtorbar{
     display: flex;
-    flex-direction:row;
+    gap: 1rem;
+    align-items: center;
+    padding: 0 1rem;
+    border-radius: 0 0 12px 12px;
+    margin-left: 0;
+    padding-left: 0;
+}
+.profile{
+    min-width: 5em;
+    height: 5em;
+    margin: 1rem 1rem;
+    border-radius: 50%;
+    object-fit: cover;
+    grid-area: pic;
+}
+/* .contact{
+    display: flex;
+    flex-direction: row;
+    gap:1em
+} */
+.name{
+    font-weight: bold;
+    grid-area: na;
+}
+.number{
+    color: gray;
+    grid-area: nu;
+}
+button{
+    grid-area: bt;
+    border-radius: 13px;
+    border: none;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    padding: 0.5em;
 }
 
 
