@@ -1,57 +1,28 @@
 
-body{
-    font:0.8rem system-ui;
-    background-color: rgb(215, 221, 221);
-    margin: 0;
-}
 .nav {
-    grid-area: m;
-    width: 100%;
+    display: flex;
     height:6em;
 	display: flex;
 	justify-content: space-between; 
+    align-items: center;
 	padding: 0.5em;
 	background-color: rgb(164, 20, 20);
 }
 .menu { 
         list-style: none;
+        font-size: 1em;
         padding: 0;
         margin: 0;
         display: flex;
-        gap: 0.5em;
+        gap: 2em;
         color: #fff;
     }
 .middle{
-   grid-area: content;
    display: grid;
    grid-template-columns: repeat(4, 1fr);
-   grid-template-rows: auto;
-   grid-template-areas: 
-                        "1 2 3 4"
-                        "5 6 7 8";
+   grid-template-rows: repeat(2, 1fr);
 }
-.i{
-    grid-area: 1;
-}
-.ii{
-    grid-area: 2;
-}
-.iii{
-    grid-area: 3;
-}
-.iv{
-    grid-area: 4;
-}
-.v{
-    grid-area: 5;
-}
-.vi{
-    grid-area: 6;
-}
-.vii{
-    grid-area: 7;
-}
-.homepage {\
+.homepage {
 	min-height: 6.25em;
     min-width: 6em;
     min-width: ;
@@ -62,14 +33,13 @@ body{
 body{
 	display: grid;
 	min-height: 100vh;
-    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 100px   
                         auto
-                        240px;
-    grid-template-areas: 
-        "m   m    m"
-        "content  content  content"
-        "f   f    f";
+                        240px; */
+    font:0.8rem system-ui;
+    background-color: rgb(215, 221, 221);
+    margin: 0;
 }
 .bottom{
     grid-area: f;
@@ -82,18 +52,18 @@ body{
     display:grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 
-                        1fr
-                        1fr
-                        4em
-                        1fr;
+                        auto
+                        auto
+                        auto
+                        auto;
     grid-template-areas: 
     "a"
     "b"
     "c"
     "d";
     margin:1rem 1rem;
-    margin-top: 30vh;
-    margin-left: 5vh;
+    /* margin-top: 30vh;
+    margin-left: 5vh; */
     margin-right: auto;
     width:20rem;
     height:30rem;
@@ -193,7 +163,7 @@ ul{
     padding-left: 0;
 }
 .profile{
-    min-width: 5em;
+    width: 5em;
     height: 5em;
     margin: 1rem 1rem;
     border-radius: 50%;
@@ -221,6 +191,27 @@ button{
     color: white;
     padding: 0.5em;
 }
-
-
+@media only screen and (max-width: 800px) {
+    .middle{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,1fr);
+    }
+}
+@media only screen and (max-width: 400px) {
+    .middle{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(8,1fr);
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .middle{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(auto,1fr);
+    }
+}
+.footer{
+    color: white;
+    background-color: rgb(124, 124, 124);
+    padding: 1rem 0.5rem;
+}
 
